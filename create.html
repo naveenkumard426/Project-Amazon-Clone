@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Create Your Amazon Account</title>
+  <style>
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #f0c14b;
+      border: none;
+      color: #111;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .conditions a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    .password-requirements {
+      font-size: 12px;
+      color: #999;
+    }
+
+    .signin-link a,
+    .business-account-link a {
+      color: #0066c0;
+      text-decoration: none;
+    }
+
+    .signin-link a:hover,
+    .business-account-link a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Create Your Amazon Account</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="mobile">Mobile number or email</label>
+        <input type="text" id="mobile" placeholder="Enter your mobile number or email">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter a password">
+        <p class="password-requirements">Passwords must be at least 6 characters.</p>
+      </div>
+      <div class="form-group">
+        <label for="re-enter-password">Re-enter password</label>
+        <input type="password" id="re-enter-password" placeholder="Re-enter your password">
+      </div>
+      <div class="button-container">
+        <button type="submit">Continue</button>
+      </div>
+    </form>
+    <p class="conditions">
+      By creating an account, you agree to Amazon's <a href="#">Conditions of Use</a> and <a href="#">Privacy Notice</a>.
+    </p>
+    <p class="signin-link">
+      Already have an account? <a href="signin.html">Sign in</a>
+    </p>
+    <p> Unlocking your account with ❤️ from India 🇮🇳 </p>
+  </div>
+  <script>
+    function redirectToSignIn() {
+      window.location.href = "signin.html";
+		}
+  </script>
+  <div class="footer">
+    <p>
+      <a href="#">Conditions of Use</a> | <a href="#">Privacy Notice</a> | <a href="#">Help</a>
+    </p>
+    <p>
+      &copy; 1996-2023, Amazon.com, Inc. or its affiliates
+    </p>
+  </div>
+</body>
+
+</html>
